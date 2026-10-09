@@ -19,6 +19,77 @@
       "image": "https://cdn.salla.network/images/themes/default/placeholder.jpg",
       "fields": [
         {
+          "id": "design_style",
+          "icon": "sicon-list",
+          "type": "items",
+          "format": "dropdown-list",
+          "label": "شكل البنر - اختر أحد 6 تصاميم",
+          "description": "إذا لم ترفع صورة سيظهر رسم جاهز يتناسب مع الشكل المختار",
+          "required": true,
+          "multichoice": false,
+          "source": "Manual",
+          "searchable": false,
+          "selected": [
+            {
+              "label": "1 - كلاسيكي (دائرة وبطاقة)",
+              "value": "classic",
+              "key": "55b4e005-5278-5432-b3f7-b575f1234990"
+            }
+          ],
+          "options": [
+            {
+              "label": "1 - كلاسيكي (دائرة وبطاقة)",
+              "value": "classic",
+              "key": "55b4e005-5278-5432-b3f7-b575f1234990"
+            },
+            {
+              "label": "2 - طباعة ثلاثية الأبعاد (مكعبات)",
+              "value": "printing",
+              "key": "d2146dc5-a635-5701-8a97-a0c7110cdabe"
+            },
+            {
+              "label": "3 - هدايا (صندوق وشريط)",
+              "value": "gifts",
+              "key": "0bf175c0-d529-575f-85f7-068744b2f508"
+            },
+            {
+              "label": "4 - تقنية واشتراكات (شاشة رقمية)",
+              "value": "tech",
+              "key": "5c79a2b5-3f18-533c-aa64-35af7b547806"
+            },
+            {
+              "label": "5 - فاخر (جوهرة وإطار)",
+              "value": "luxury",
+              "key": "ca80fb3a-3e69-53f9-8eb4-bd26a513a966"
+            },
+            {
+              "label": "6 - بسيط وعصري (دوائر ناعمة)",
+              "value": "minimal",
+              "key": "04ff1f2e-493e-5a7b-9fff-cfaf4552b878"
+            }
+          ]
+        },
+        {
+          "id": "badge_text",
+          "icon": "sicon-format-text-alt",
+          "type": "string",
+          "format": "text",
+          "label": "نص الشارة العلوية",
+          "required": false,
+          "value": "✨ اكتشف الجديد",
+          "description": "اتركه فارغًا لإخفاء الشارة. لا تظهر أسماء متاجر ثابتة."
+        },
+        {
+          "id": "graphic_text",
+          "icon": "sicon-format-text-alt",
+          "type": "string",
+          "format": "text",
+          "label": "النص داخل البطاقة الكلاسيكية",
+          "required": false,
+          "value": "NEW",
+          "description": "يستخدمه شكل Classic فقط عند عدم رفع صورة؛ مثال: 3D أو اسم متجرك."
+        },
+        {
           "id": "title",
           "icon": "sicon-format-text-alt",
           "type": "string",
@@ -26,7 +97,7 @@
           "format": "text",
           "required": true,
           "placeholder": "اكتب العنوان الرئيسي...",
-          "value": "اكتشف عالم Pixart3D"
+          "value": "اكتشف تشكيلتنا المميزة"
         },
         {
           "id": "content",
@@ -36,7 +107,7 @@
           "format": "textarea",
           "required": false,
           "placeholder": "اكتب وصف البنر...",
-          "value": "منتجات مميزة وتصاميم إبداعية تناسب ذوقك."
+          "value": "تصاميم ومنتجات مختارة خصيصًا لك."
         },
         {
           "id": "hero_image",
@@ -55,7 +126,7 @@
           "format": "text",
           "label": "نص الزر",
           "required": false,
-          "value": "اكتشف المتجر"
+          "value": "تسوق الآن"
         },
         {
           "id": "button_url",
@@ -134,6 +205,71 @@
           "label": "لون وصف البنر",
           "required": false,
           "value": "#C5DCE1"
+        },
+        {
+          "id": "badge_text_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون نص الشارة",
+          "required": false,
+          "value": "#9DF7E7"
+        },
+        {
+          "id": "badge_background_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون خلفية الشارة",
+          "required": false,
+          "value": "#0A4651"
+        },
+        {
+          "id": "badge_border_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون إطار الشارة",
+          "required": false,
+          "value": "#237C86"
+        },
+        {
+          "id": "graphic_primary_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون الرسم الأول",
+          "required": false,
+          "value": "#65F5DB",
+          "description": "يتحكم في الرسومات الستة الافتراضية."
+        },
+        {
+          "id": "graphic_secondary_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون الرسم الثاني",
+          "required": false,
+          "value": "#0597A6"
+        },
+        {
+          "id": "graphic_text_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون تفاصيل الرسم أو نصه",
+          "required": false,
+          "value": "#003B49"
+        },
+        {
+          "id": "decoration_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون زخارف الخلفية",
+          "required": false,
+          "value": "#5EEAD4",
+          "description": "للدائرة، والشبكات، والحدود والأشكال الثانوية."
         }
       ]
     }
