@@ -1,0 +1,20 @@
+
+# Installed dependencies
+node_modules/
+
+# Generated build files
+dist/
+
+# Local temporary files
+.salla-temp/
+.vite/
+*.log
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+
+# Editor and OS files
+.DS_Store
+Thumbs.db

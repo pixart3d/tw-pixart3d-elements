@@ -1,14 +1,141 @@
 {
-    "name": {
-        "ar": "Pixart3D Elements",
-        "en": "Pixart3D Elements"
-    },
-    "description": {
-        "ar": "",
-        "en": ""
-    },
-    "author_email": "pixart3drr@gmail.com",
-    "support_url": "https://www.pixart3d-store.com/",
-    "repository": "https://github.com/pixart3d/tw-pixart3d-elements",
-    "components": []
+  "name": {
+    "ar": "Pixart3D Elements",
+    "en": "Pixart3D Elements"
+  },
+  "description": {
+    "ar": "عناصر مخصصة لتصميم واجهات المتاجر",
+    "en": "Custom storefront design components"
+  },
+  "author_email": "pixart3drr@gmail.com",
+  "support_url": "https://www.pixart3d-store.com/",
+  "repository": "https://github.com/pixart3d/tw-pixart3d-elements",
+  "components": [
+    {
+      "title": "Pixart Hero",
+      "icon": "sicon-layout-grid",
+      "name": "pixart-hero",
+      "key": "d29742d5-cd8d-45d7-9098-9d00c67c8888",
+      "image": "https://cdn.salla.network/images/themes/default/placeholder.jpg",
+      "fields": [
+        {
+          "id": "title",
+          "icon": "sicon-format-text-alt",
+          "type": "string",
+          "label": "عنوان البنر",
+          "format": "text",
+          "required": true,
+          "placeholder": "اكتب العنوان الرئيسي...",
+          "value": "اكتشف عالم Pixart3D"
+        },
+        {
+          "id": "content",
+          "icon": "sicon-paragraph",
+          "type": "string",
+          "label": "وصف البنر",
+          "format": "textarea",
+          "required": false,
+          "placeholder": "اكتب وصف البنر...",
+          "value": "منتجات مميزة وتصاميم إبداعية تناسب ذوقك."
+        },
+        {
+          "id": "hero_image",
+          "icon": "sicon-image",
+          "type": "string",
+          "format": "image",
+          "label": "صورة البنر",
+          "description": "ارفع صورة لعرضها داخل البنر",
+          "required": false,
+          "value": null
+        },
+        {
+          "id": "button_text",
+          "icon": "sicon-format-text-alt",
+          "type": "string",
+          "format": "text",
+          "label": "نص الزر",
+          "required": false,
+          "value": "اكتشف المتجر"
+        },
+        {
+          "id": "button_url",
+          "icon": "sicon-link",
+          "type": "string",
+          "format": "text",
+          "label": "رابط الزر",
+          "required": false,
+          "placeholder": "/products",
+          "value": "/products"
+        },
+        {
+          "id": "button_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون خلفية الزر",
+          "description": "مثال: #64E6D0",
+          "required": false,
+          "value": "#64E6D0"
+        },
+        {
+          "id": "button_text_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون نص الزر",
+          "description": "مثال: #FFFFFF للأزرار الغامقة",
+          "required": false,
+          "value": "#003B49"
+        },
+        {
+          "id": "background_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون الخلفية الأول",
+          "description": "بداية التدرج (يمين البنر في بعض الاتجاهات)",
+          "required": false,
+          "value": "#003B49"
+        },
+        {
+          "id": "background_color_2",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون الخلفية الثاني",
+          "description": "منتصف التدرج",
+          "required": false,
+          "value": "#062C38"
+        },
+        {
+          "id": "background_color_3",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون الخلفية الثالث",
+          "description": "نهاية التدرج",
+          "required": false,
+          "value": "#091C32"
+        },
+        {
+          "id": "title_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون عنوان البنر",
+          "required": false,
+          "value": "#FFFFFF"
+        },
+        {
+          "id": "description_color",
+          "icon": "sicon-paint-brush",
+          "type": "string",
+          "format": "text",
+          "label": "لون وصف البنر",
+          "required": false,
+          "value": "#C5DCE1"
+        }
+      ]
+    }
+  ]
 }
